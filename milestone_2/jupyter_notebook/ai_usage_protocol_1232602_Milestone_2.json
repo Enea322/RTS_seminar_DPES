@@ -1,0 +1,74 @@
+{
+  "protocol_version": "0.2",
+  "student_id": "1232602",
+  "course": "ELE Real-Time Systems",
+  "milestone": "Milestone 2",
+  "topic": "Dynamic Priority Exchange Server",
+  "entries": [
+    {
+      "id": "e-e05c5d72",
+      "timestamp": "2026-06-04T20:00:48+02:00",
+      "parent_id": null,
+      "objective": "My goal was to create a table that compared the scheduling approaches that are stated in milestone 2. Additionally, I wanted to know how a table can be created in overleaf.",
+      "ai_tool": {
+        "name": "ChatGPT",
+        "model": "GPT-5.5"
+      },
+      "prompt": "Could a create a table that in the overleaf format that compares the following scheduling algorithms:\nDynamic Priority Exchange Server (DPES)\nDynamic Sporadic Server (DSS)\nTotal Bandwidth Server (TBS)\nStack Resource Policy (SRP)\n\nThis table shall show the name of the scheduling algorithms, the main goal,advantages and limitations,",
+      "ai_output_summary": "The llm basically gave as an output the table in the latex format, with information about the individual algorithms as required. The table in latex format looks like this:\n\n\\begin{table}[h]\n\\caption{Comparison of Related Scheduling Approaches}\n\\centering\n\\begin{tabular}{|m{2.0cm}|m{2.0cm}|m{2.0cm}|m{2.0cm}|}\n\\hline\n\\textbf{Approach} &\n\\textbf{Primary Goal} &\n\\textbf{Advantages} &\n\\textbf{Limitations} \\\\\n\\hline\n\nWith each field having the relevant information, which will not be shown here since its too long.",
+      "verification": {
+        "actions": [
+          "I checked if the information in this table was actually correct, this was done by comparing the summarized versions in the table with the actual relevant sections in the Buttazzo book, mainly the definitions."
+        ],
+        "level": "primary-source-check"
+      },
+      "evaluation": {
+        "status": "accepted",
+        "issues": [
+          "The only issue with the table were with the spacing. Initially the spacing was too large for IEE format, so it would overlap with some other text. By making each entry 2.0cm, the table was more compact and adequate."
+        ],
+        "usefulness": "low"
+      },
+      "integration": {
+        "used_in_work": true,
+        "section": "6.2, 6.3, 6.4, 7.8",
+        "usage_type": "idea-generation",
+        "direct_text_reused": true
+      },
+      "reflection": "This table was quite useful to show a simple comparison between each scheduling algorithm, being a good addition for the milestone 2 paper. Also, now I know how to set-up a table in overleaf."
+    },
+    {
+      "id": "e-e6f8825c",
+      "timestamp": "2026-06-04T20:00:48+02:00",
+      "parent_id": null,
+      "objective": "The main objective was to create a simple conclusion section for ending the milestone 2 paper.",
+      "ai_tool": {
+        "name": "ChatGPT",
+        "model": "GPT-5.5"
+      },
+      "prompt": "Could you help me create a simple conclusion paragraph for the seminar paper. The ending shall mostly compare these approaches that were. Used in the paper: DPES, Stack Resource Policy (SRP), Dynamic Sporadic Server, Total Bandwith Server.You can use buttazo as the source, as all of these should be available in that book. This conclusion should mostly compare them for usage in embedded and real-time systems.",
+      "ai_output_summary": "\\subsection{Conclusion}\n\nThe Dynamic Priority Exchange Server occupies a specific position within the landscape of real-time scheduling approaches. Compared with DSS and TBS, it provides an alternative method for improving aperiodic responsiveness while preserving EDF schedulability guarantees. Compared with SRP, it addresses a different class of scheduling problems. Understanding these tradeoffs is essential when selecting scheduling mechanisms for embedded and real-time systems.",
+      "verification": {
+        "actions": [
+          "I mainly checked the information in this section by comparing it with the rest of the paper. This confirmed that the assumptions in the output were mostly correct."
+        ],
+        "level": "plausibility-check"
+      },
+      "evaluation": {
+        "status": "partially-accepted",
+        "issues": [
+          "The text it generated was mostly simple and understandable. Some sentences were changed in order to fit better with the flow and my writing style."
+        ],
+        "usefulness": "medium"
+      },
+      "integration": {
+        "used_in_work": true,
+        "section": "",
+        "usage_type": "idea-generation",
+        "direct_text_reused": true
+      },
+      "reflection": ""
+    }
+  ],
+  "exported_at": "2026-06-04T20:00:48+02:00"
+}
