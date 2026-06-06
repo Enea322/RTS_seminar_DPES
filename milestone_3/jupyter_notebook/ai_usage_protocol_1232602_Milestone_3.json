@@ -1,0 +1,42 @@
+{
+  "protocol_version": "0.2",
+  "student_id": "1232602",
+  "course": "ELE Real-Time Systems",
+  "milestone": "Milestone 3",
+  "topic": "Dynamic Priority Exchange Server",
+  "entries": [
+    {
+      "id": "e-ffb124c8",
+      "timestamp": "2026-06-06T20:30:25+02:00",
+      "parent_id": null,
+      "objective": "Try to identify some application examples where it would make sense to use DPES and some where it would not be suitable. There are no concrete examples in the book or online, so it made sense to ask an LLM for some results.",
+      "ai_tool": {
+        "name": "ChatGPT",
+        "model": "GPT-5.5"
+      },
+      "prompt": "Could you provide me with some application examples where using the Dynamic Priority Exchange Server approach would be suitable, and also some other applications where DPES is not suitable for. Additionally, give a simple explanation to what made you decide if an application is optimal or not, what factors lead you to this decision?",
+      "ai_output_summary": "Suitable Applications\n\nExamples:\n\nAutomotive control systems.\nIndustrial automation.\nRobotics.\nAvionics.\nSystems with many periodic tasks and occasional asynchronous events.\nUnsuitable Applications\n\nExamples:\n\nVery small microcontrollers with extremely limited resources.\nSystems where simple fixed-priority scheduling is sufficient.\nApplications with almost no aperiodic workload.\n\nThe suitability of DPES depends on the characteristics and requirements of the system. First, DPES is most beneficial in systems that contain both periodic and aperiodic tasks, since its main purpose is to improve the responsiveness of unpredictable aperiodic requests while maintaining the execution of periodic tasks. Second, the approach is particularly useful in applications with strict timing requirements, where periodic tasks must meet their deadlines even when unexpected events occur. Finally, the additional scheduling mechanisms of DPES introduce some complexity, making it more suitable for systems that can accommodate this overhead than for very small or resource-constrained embedded devices.",
+      "verification": {
+        "actions": [
+          "Since there are no other sources to verify if the applications it provided are correct, the only way to verify the information was to analyze if it logically made sense. Thus, mainly for the suitable applications part, the approach was to analyze the requirements for those applications and to see if DPES matches any of those."
+        ],
+        "level": "plausibility-check"
+      },
+      "evaluation": {
+        "status": "partially-accepted",
+        "issues": [
+          "The long paragraph that it generated in the end of the output was too long, so I wrote a simplified version of that in the milestone paper."
+        ],
+        "usefulness": "medium"
+      },
+      "integration": {
+        "used_in_work": true,
+        "section": "VI. DPES APPLICATION EXAMPLES",
+        "usage_type": "idea-generation",
+        "direct_text_reused": false
+      },
+      "reflection": "This output from the LLM was a good way to understand suitable/unsuitable application examples for DPES. This was a part that was missing from the book, so understanding how this algorithm can be used in actual engineering contexts was quite helpful."
+    }
+  ],
+  "exported_at": "2026-06-06T20:30:25+02:00"
+}
