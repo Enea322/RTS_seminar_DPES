@@ -1,0 +1,42 @@
+{
+  "protocol_version": "0.2",
+  "student_id": "1232602",
+  "course": "ELE Real-Time Systems",
+  "milestone": "Milestone 4",
+  "topic": "Dynamic Priority Exchange Server",
+  "entries": [
+    {
+      "id": "e-bd3787b9",
+      "timestamp": "2026-06-11T22:18:59+02:00",
+      "parent_id": null,
+      "objective": "Create a simple image to easily visualize how DPES works, to be used in the seminar paper and presentation.",
+      "ai_tool": {
+        "name": "ChatGPT",
+        "model": "GPT-5.5"
+      },
+      "prompt": "Can you generate an image in order to explain the Dynamic Priority Exchange Server. It needs to be simple and easy to grasp, no large amount of text, mainly explain and visualize how it trades the runtime between periodic and aperiodic tasks. The image should mostly explain this concept:\n\nDynamic Priority Exchange Server is a scheduling mechanism that allows a periodic server to handle aperiodic tasks while maintaining the priority of periodic tasks. It operates by invoking a periodic server that services waiting aperiodic tasks and can exchange priority with the highest-priority periodic task if time allows.",
+      "ai_output_summary": "Generated and image that explained this scheduling approach",
+      "verification": {
+        "actions": [
+          "I mainly checked the information inside the image by comparing it with the explanation from the book and seminar paper to see if the image it generated made any sense."
+        ],
+        "level": "primary-source-check"
+      },
+      "evaluation": {
+        "status": "accepted",
+        "issues": [
+          "Main issue was that there was too much text in the image, which is not optimal for my use case. I asked it again to reduce the amount the amount of text in the image and keep it simple"
+        ],
+        "usefulness": "high"
+      },
+      "integration": {
+        "used_in_work": true,
+        "section": "IV. TECHNICAL COMPONENTS",
+        "usage_type": "idea-generation",
+        "direct_text_reused": false
+      },
+      "reflection": "The image helped to understand the algorithm a bit better."
+    }
+  ],
+  "exported_at": "2026-06-11T22:18:59+02:00"
+}
